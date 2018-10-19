@@ -5,9 +5,10 @@ it in the form of a piggy bank. When you want to send money to
 someone else, you break your piggy banks, make new piggy banks as needed 
 and send the piggy banks you amade containing money to the other people and to 
 yourself if the most recent piggy bank you broke has more money in it than what 
-you wanted to send to the other person.
+you wanted to send to the other person. This prevents double spending.
 
-- Lecture 1 29:00 - 34:00'''
+- Lecture 1 29:00 - 34:00
+- Ending - 51:00'''
 
 class UTXO:
 	def __init__(self, amount):
