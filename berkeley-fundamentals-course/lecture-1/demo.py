@@ -1,3 +1,14 @@
+''' Each account has an unspent transaction output which is what
+they received as "packages" of cryptocurreny from other people.
+It works in the following way: when someone sends you money, they send
+it in the form of a piggy bank. When you want to send money to 
+someone else, you break your piggy banks, make new piggy banks as needed 
+and send the piggy banks you amade containing money to the other people and to 
+yourself if the most recent piggy bank you broke has more money in it than what 
+you wanted to send to the other person.
+
+- Lecture 1 29:00 - 34:00'''
+
 class UTXO:
 	def __init__(self, amount):
 		self.amount = amount
