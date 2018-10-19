@@ -18,7 +18,6 @@ class person:
 				amount -= utxo.amount
 				self.UTXOs.remove(utxo)
 				person.UTXOs.append(newUTXO)
-				print(amount)
 			else:
 				otherUTXO = UTXO(amount)
 				selfUTXO = UTXO(utxo.amount - amount)
