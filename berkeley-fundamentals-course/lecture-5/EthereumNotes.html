@@ -41,7 +41,7 @@
 	</div>
 	<div class="jumbotron text-white" style="background: gray">
 		<h1 class="display-4">What is Ethereum?</h1>
-		<hr>
+		<hr style="background: white">
 		<li class="lead">It is a decentralized platform designed to run smart contracts. It is like a distributed computer that executes code (everyone runs the code and we come to a consensus on the output), and it is a distributed state machine. It also has ether. It is also account based while Bitcoin is UTXO based.
 		</li>
 		<br>
@@ -67,10 +67,39 @@
 			<li class="lead">Complex authentication</li>
 			<p class="lead definition-gray" style="margin-top: .5em">Such as we need M of N signatures to do something sorta things.</p>
 		</div>
-		<div class="jumbotron">
+		<div class="jumbotron text-white" style="background: gray">
 			<h1 class="display-4">EVM Gas and Fees</h1>
+			<hr style="background: white">
 			<p class="lead">Every contract requires gas which feuls the contract execution. Every transaction specifies the startgas -> maximum quanitity of gas it is willing to consume and the gas price -> fee in ether it is willing to pay per unit of gas. So overall consumption of ether = startgas * gasprice. This gas will be paid to the person who runs the smart contract.</p>
-			<p class="lead definition-gray">So essentially, when you are purchasing gas, you are essentially purchasing distributed, trustless, computational power.</p>
+			<p class="lead definition-white">So essentially, when you are purchasing gas, you are essentially purchasing distributed, trustless, computational power.</p>
+			<p class="lead">So essentially, everyone in the network, in trying to add a block to the network, is running the smart contracts that are in the mempool in their own EVM, but they don't get rewarded until a block actually gets added to the blockchain. This means that you need to only have enough gas for one person to run the code because the person who adds the block will be the only person to get rewarded.</p>
+		</div>
+		<div class="jumbotron">
+			<h1 class="display-4">Computation</h1>
+			<hr>
+			<p class="lead">Ethereum is not about optimizing efficiency of computation because it is redundantly parallel as everyone on the network is running the same code. It is simply a way to reach consensus on the system state without needed trusted third parties. This also creates an incentive not to use blockchain for computation that can be done off chain. </p>
+		</div>
+		<div class="row text-center" style="margin-left: 1em; margin-right: 1em;">
+			<div class="col-6">
+				<p class="lead" style="font-size: 25px;">Good Use Cases for Blockchain</p>
+				<li class="lead">Need of a shared database with parties that don't trust each other</li>
+				<li class="lead">Interest in fault-tolerance, data immutability, or censorship resistance.</li>
+			</div>
+			<div class="col-6">
+				<p class="lead" style="font-size: 25px;">Bad Use Cases for Blockchain</p>
+				<li class="lead">Database doesn't need to be shared</li>
+				<li class="lead ">Data must be kept confidential (can work through encryption for blockchain but not in most cases)</li>
+				<li class="lead">Must handle Complex and/or large amounts of data</li>
+				<li class="lead">Need to be able to edit past data</li> 
+				<li class="lead">Interested in efficiency (sadly Machine Learning).</li>	
+			</div>
+		</div>
+		<div class="jumbotron" style="margin-top: 2em;">
+			<h1 class="display-4">Supply Chain</h1>
+			<hr>
+			<p class="lead">The idea is that we can track our supply chain infromation through blockchain, and so in the business side of things, we can have efficient transactions through smart contracts, easy tracking, and recalls while on the consumer side, we can have a transparent record of products, and have applications in fair trade, sustainablility, and ethical consumerism.</p>
+			<hr>
+			<p class="lead">Other reasons for blockchain include prediction markets for hedging and insurance, security bug bounty, and ICO signalling. For example, lets say that you create a bet: "Will my house burn down" by 2020. People will buy shares of either the "yes" choice or the "no" choice. Whoever wins the bet, those shares will be valid and the shares of the "no" choice will not be valid. So if the house does burn down </p>
 		</div>
 </body>
 </html>
