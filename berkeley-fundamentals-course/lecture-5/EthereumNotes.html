@@ -9,8 +9,13 @@
 		.graycolor {
 			color: gray;
 		}
-		.definition {
+		.definition-gray {
 			border: gray solid 1px;
+			border-radius: 20px;
+			padding: 1em;
+		}
+		.definition-white {
+			border: white solid 1px;
 			border-radius: 20px;
 			padding: 1em;
 		}
@@ -31,17 +36,36 @@
 	<div class="jumbotron">
 		<h1 class="display-4">Smart Contracts</h1>
 		<hr>
-		<p class="lead" style="border: gray 1px solid; border-radius: 20px; padding: 1em;">Code that facilitates, verifies, or enforces the negotiation or execution of a digital contract. A trusted entity must run this code.</p>
+		<p class="lead definition-gray">Code that facilitates, verifies, or enforces the negotiation or execution of a digital contract. A trusted entity must run this code.</p>
 		<p class="lead">Essentially, it is like a regular contract between two groups but this contract is fully enforced by code.</p>
 	</div>
 	<div class="jumbotron text-white" style="background: gray">
 		<h1 class="display-4">What is Ethereum?</h1>
 		<hr>
-		<p class="lead">It is a decentralized platform designed to run smart contracts. It is like a distributed computer that executes code (everyone runs the code and we come to a consensus on the output), and it is a distributed state machine. It also has ether. It is also account based while Bitcoin is UTXO based.
-		</p>
+		<li class="lead">It is a decentralized platform designed to run smart contracts. It is like a distributed computer that executes code (everyone runs the code and we come to a consensus on the output), and it is a distributed state machine. It also has ether. It is also account based while Bitcoin is UTXO based.
+		</li>
 		<br>
-		<p class="lead">In bitcoin, a state is how much money (how many utxos) each person has, but in Ethereum, each state is how much money each person has alongside what the values are in each of the smart contract's variables, who has ownership on theses non-coin items, etc.</p>	
-		<div class="lead definition"></p>
+		<li class="lead">In bitcoin, a state is how much money (how many utxos) each person has, but in Ethereum, each state is how much money each person has alongside what the values are in each of the smart contract's variables, who has ownership on theses non-coin items, etc.</li>	
+		<br>
+		<li class="lead">Every node executs Ethereum smart contracts, and then comes to a consensus on the new network state.</li>
+		<div class="lead definition-white" style="margin-top: 1em">Smart Contracts in Ethereum are like autonomous agents that live inside the Ethereum Network. They react to external world when they are poked by transactions which call specific functions. They have direct control over: 
+			<li>Internal Ether Balance</li>
+			<li>Internal Contract State</li>
+		<br>
+		<p>Essentially, the smart contracts handle all the finances given the certain restrictions and algorithms the users give it, so that the users don't have to make any calculations by themselves.</p>
+		</div>
 	</div>
+		<div class="jumbotron">
+			<h1 class="display-4">Purposes of Smart Contracts</h1>
+			<hr>
+			<li class="lead">Store and maintain data</li>
+			<p class="lead definition-gray" style="margin-top: .5em">Data represents something useful to others or other contracts.</p>
+			<li class="lead">Manage contact or relationships between untrusting (or anonymous users)</li>
+			<p class="lead definition-gray" style="margin-top: .5em">Financial contracts, escrow, insurance, betting. For example, lets say that you are buying something from a person. You put money into the smart contract, but the smart contract doesn't send the money to the other person until it is sure that the other person has met all the requirements to recieve the item (such as finishing all the paperwork or completely sending the item). If the smart contract sees that the vendor is doing something sketchy, then it won't complete the transaction. It is essentially the middleman that's alwyas accurate and doesn't need trusting.</p>
+			<li class="lead">Providing functions to other contracts</li>
+			<p class="lead definition-gray" style="margin-top: 1em ">Such as some algorithms that can be useful in other smart contracts. Smart contracts can call each other.</p>
+			<li class="lead">Complex authentication</li>
+			<p class="lead definition-gray" style="margin-top: .5em">Such as we need M of N signatures to do something sorta things.</p>
+		</div>
 </body>
 </html>
